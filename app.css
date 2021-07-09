@@ -1,0 +1,65 @@
+body{
+    background-image: linear-gradient(93deg, lightgreen 0%, green 100%);
+}
+header {
+    text-align: center;
+}
+
+/* information collection session */
+#infoDiv {
+    display: flex;
+    justify-content: center;
+}
+label {
+    width: 200px;
+    float: left;
+    text-align: right;
+    margin: 5px;
+}
+input, #favColor {
+    margin: 5px;
+}
+input[type=submit] {
+    padding: 5px;
+    border-radius: 20%;
+    background-color: blue;
+}
+
+/* help section */
+#helpDiv {
+    /* position:absolute; */
+    /* width: 20%; */
+    /* text-align: left; */
+    padding: 5px;
+}
+
+#helpInfo {
+    visibility: hidden;
+    background-color: antiquewhite;
+    width: 480px;
+    margin: 0 auto;
+}
+
+/* game section  */
+.gameDiv {
+    display: none;
+    justify-content: center;
+    text-align: center;
+}
+
+#gameSection {
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 40px;
+}
+#gameSection img{
+    width: 100px;
+}
+
+/* sesult section */
+#resultDiv {
+    display: flex;
+    justify-content: center;
+}

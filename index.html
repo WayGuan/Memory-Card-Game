@@ -1,0 +1,72 @@
+<!-- This is a memory card game created using only Javascript, HTML, CSS.
+    Choosing higher skill level will start a game with more cards.
+    Author: Weiwei, Created on June 8, 2021  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="app.css">
+
+</head>
+
+<body>
+    <header>
+        <h2>This is a fun memory game.</h2>
+    </header>
+    <div id="infoDiv">
+        <!-- this is the info gathering div -->
+        <form id="infoForm">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" name="nameInput" id="nameInput">
+            </div>
+            <div>
+                <label for="age">Age:</label>
+                <input type="number" name="ageInput" id="ageInput">
+            </div>
+            <div>
+                <label for="favColor">Select your favorite color:</label>
+                <select name="favColor" id="favColor">
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="blue">Blue</option>
+                </select>
+            </div>
+            <div>
+                <label for="skillLevel">Select your skill level:</label>
+                <select name="skillLevel" id="skillLevel">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    
+    <!-- this is the game div -->
+    <div class="gameDiv" id="gameDiv">
+        <!-- Show the welcome message -->
+        <h3 id="welcomeUser">Enjoy your game!</h3>
+        <!-- help button -->
+        <div id="helpDiv">
+            <button id="helpButton" onclick="toggleHelpInfo()">HELP TOGGLE</button>
+            <p id="helpInfo">Flip two cards to found the match, till you find all the matches.</p>
+        </div>
+        <!-- the game section div -->
+        <div id="gameSection">
+        </div>
+
+    </div>
+    <!-- this is the result div -->
+    <div id="resultDiv">
+        <h3 id="gameResult"></h3>
+    </div>
+</body>
+
+</html>
